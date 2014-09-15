@@ -1,0 +1,61 @@
+Fri, 12 Sep 2014 07:25:31 websocketserver.py[line:60] INFO Thread-1	webSocket thread start, waiting for connection
+Fri, 12 Sep 2014 07:25:37 websocketserver.py[line:71] INFO Thread-1	Start hands shake with ('10.86.10.5', 55670)
+Fri, 12 Sep 2014 07:25:37 websocketserver.py[line:73] DEBUG Thread-1	Client Data: 
+GET / HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+Host: 10.86.8.71:81
+Origin: http://10.86.8.71
+Sec-WebSocket-Key: kGHSeI3xDEfkw1ENqxnZtA==
+Sec-WebSocket-Version: 13
+
+
+Fri, 12 Sep 2014 07:25:37 websocketserver.py[line:83] DEBUG Thread-1	Response Data: 
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: k8WEZBHIB7RdOinEK9a272GqnYU=
+
+
+Fri, 12 Sep 2014 07:25:37 websocketserver.py[line:85] INFO Thread-1	Hands Shake Successfully
+Fri, 12 Sep 2014 07:25:37 websocketserver.py[line:90] DEBUG Thread-1	Client initialize successfully and start listening
+Fri, 12 Sep 2014 07:25:37 websocketserver.py[line:185] DEBUG Thread-1	Received data length:5
+Fri, 12 Sep 2014 07:25:37 websocketserver.py[line:200] DEBUG Thread-1	received_data_from_stb: ready
+Fri, 12 Sep 2014 07:25:37 websocketserver.py[line:202] DEBUG Thread-1	Client ready, set EVENT() true
+Fri, 12 Sep 2014 07:25:39 websocketserver.py[line:185] DEBUG Thread-1	Received data length:18
+Fri, 12 Sep 2014 07:25:39 websocketserver.py[line:200] DEBUG Thread-1	received_data_from_stb: demo<split>success
+Fri, 12 Sep 2014 07:25:41 websocketserver.py[line:185] DEBUG Thread-1	Received data length:18
+Fri, 12 Sep 2014 07:25:41 websocketserver.py[line:200] DEBUG Thread-1	received_data_from_stb: mode<split>success
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:60] INFO Thread-2	webSocket thread start, waiting for connection
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:185] DEBUG Thread-1	Received data length:23
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:200] DEBUG Thread-1	received_data_from_stb: undefined<split>success
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:212] CRITICAL Thread-1	unpack requires a string argument of length 1
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:71] INFO Thread-2	Start hands shake with ('10.86.10.5', 50163)
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:142] INFO Thread-1	webSocket closed
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:73] DEBUG Thread-2	Client Data: 
+GET / HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+Host: 10.86.8.71:82
+Origin: http://10.86.8.71
+Sec-WebSocket-Key: DjTfVQG/b6QO2uSYfVp7JQ==
+Sec-WebSocket-Version: 13
+
+
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:83] DEBUG Thread-2	Response Data: 
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: 5t5ywiIFSdQ7hz1iHqx8LGdbJRo=
+
+
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:85] INFO Thread-2	Hands Shake Successfully
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:90] DEBUG Thread-2	Client initialize successfully and start listening
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:185] DEBUG Thread-2	Received data length:5
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:200] DEBUG Thread-2	received_data_from_stb: ready
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:202] DEBUG Thread-2	Client ready, set EVENT() true
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:185] DEBUG Thread-2	Received data length:26
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:200] DEBUG Thread-2	received_data_from_stb: Welcome Page<split>success
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:149] INFO Thread-2	webSocket closed
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:185] DEBUG Thread-2	Received data length:6
+Fri, 12 Sep 2014 07:25:43 websocketserver.py[line:200] DEBUG Thread-2	received_data_from_stb: closed

